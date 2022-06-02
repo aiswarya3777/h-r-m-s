@@ -9,13 +9,32 @@
     <style>
         .center {
             margin: auto;
-            width: 60%;
-            padding: 10px;
             padding-top: 170px;
                 }
-                .content{
-                  background-color: cornflowerblue;  
+        .content{
+                  background-color: cornflowerblue; 
+                  height: 20em;
+                  text-align: center;
+                  border-radius: 15px;
                 }
+        #address label {
+                        display: inline-block;
+                        width: 5em;
+                        text-align: right;
+                        padding-right: 0.5em;
+                        }
+        #address input {
+                        display: inline-block;
+                        width: 200px;
+                        margin-left: 10px;
+                        }
+        .linespacing_input{
+                            padding-top:1em ;
+                        }
+                        a{
+                            text-decoration: none;
+                            /* margin-top: 1em; */
+                        }
     </style>
 </head>
 <body>
@@ -23,18 +42,22 @@
         <div class="row">
             <div class="col-md-12 center"></div>
             <div class="col-md-4"></div>
-            <div class="col-md-4 content">
+            <div class="col-md-4 content " id="address">
                 <form action="">
-                    <h1 style="text-align:center;">LOGIN</h1>
-                    <div><label for="username">USER NAME</label>
-                        <input type="text">
+                    <h2 style="text-align:center;padding-top: 30px; padding-bottom: 10px;"><b>LOGIN</b></h2>
+                    <div class="linespacing_input">
+                        <label for="username">USERNAME </label>
+                        <input type="text" class="form-control">
                     </div>
-                    <div> <label for="password">PASSWORD</label>
-                        <input type="text">
+                    <div  class="linespacing_input">
+                        <label for="password">PASSWORD </label>
+                        <input type="pas" class="form-control">
                     </div>
-                    <center><button type="button" class="btn btn-dark">LOGIN</button></center>
+                    <button type="button" class="btn btn-dark" style="margin-top: 20px;">LOGIN</button><br>
+                   <a href="">Forgot Password ?</a>
                 </form>
             </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
 </body>
