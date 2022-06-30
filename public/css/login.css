@@ -1,0 +1,42 @@
+.center {
+    margin: auto;
+    padding-top: 170px;
+        }
+.content{
+          height: 20em;
+          text-align: center;
+          border-radius: 15px;
+          background: rgba(247, 161, 22, 0.27);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(8.2px);
+          -webkit-backdrop-filter: blur(8.2px);
+          border: 1px solid rgba(247, 161, 22, 1);
+          box-shadow: 5px 10px #888888;
+        }
+#address label {
+                display: inline-block;
+                width: 5em;
+                text-align: right;
+                padding-right: 0.5em;
+                }
+#address input {
+                display: inline-block;
+                width: 200px;
+                margin-left: 10px;
+                }
+.linespacing_input{
+                    padding-top:1em ;
+                }
+                a{
+                    text-decoration: none;
+                }
+.bg-img {
+        background-image: url('/images/main_banner.png');
+        background-repeat: no-repeat;
+        height: 610px;
+        }    
+h2{
+    padding-top: 25px;
+    padding-bottom: 30px;
+}            

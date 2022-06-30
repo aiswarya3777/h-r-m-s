@@ -1,0 +1,29 @@
+.profile_image{
+    width:150px;
+    height:200px;
+    padding-top: 60px;
+}
+
+.admin_deatial_1{
+    padding-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.collapse_button{
+   margin-top: 20px;
+   margin-right: 20px;
+   width: 100px;
+}
+div{
+    border-radius: 20px;
+}
+.collapse_div{
+    margin-top: 20px;
+}
+.card_group{
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
