@@ -87,7 +87,7 @@
                 },
                 errorElement: 'div',
                 submitHandler: function (form) {
-                    window.location = "{{Route('dashboard')}}";
+                    window.location = "{{Route('employee_dashboard')}}";
                 }
 
             });

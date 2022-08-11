@@ -11,7 +11,7 @@ body
 .settings {
   height:73px; 
   float:left;
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  /* background:url( https://s3.postimg.org/bqfooag4z/startific.jpg); */
   background-repeat:no-repeat;
   width:250px;
   margin:0px;
@@ -89,6 +89,7 @@ opacity:1;
 }
 
 .main-menu {
+z-index: 1000;
 background:#F7F7F7;
 position:absolute;
 top:0;
@@ -202,7 +203,7 @@ transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 }
 
 .settings:active, settings:focus {   
-  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  /* background:url( https://s3.postimg.org/bqfooag4z/startific.jpg); */
   -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;

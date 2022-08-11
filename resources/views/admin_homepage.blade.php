@@ -1,52 +1,182 @@
 @extends('layout')
 @section("content")
-<h1 class="log_name_style">WELCOME ADMIN !!!!</h1>
 
-  <div class="row " style="width: 100%; display: inline; ">
-    <div class="col-3" style="display: inline-block;">
-      <div class="faicon_style div_margin">
-        <!-- <span>
-        <i class="fa fa-book " aria-hidden="true"></i>
-        </span> -->
+<div class="container">
+  <div class="header-body">
+    <div class="row">
+        <div class="card card-stats mb-4 mb-xl-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+               
+                <span class="h2 font-weight-bold mb-0"><a href="{{Route('add_project')}}">Recent Projects</a></span>
+              </div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                  <i class="fas fa-chart-bar"></i>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+     
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-stats mb-4 mb-xl-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                
+                <span class="h2 font-weight-bold mb-0"><a href="{{Route('employee_list')}}">New Employees</a></span>
+              </div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 mb-0 text-muted text-sm">
+              <span class="text-danger mr-2"><i class=""></i></span>
+              <span class="text-nowrap"></span>
+            </p>
+          </div>
+        </div>
       </div>
-      <div style="display: inline-block;" class="div_margin">
-        <p class="status_div"><a href="{{Route('add_project')}}">Recent Projects</a></p>
-        
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-stats mb-4 mb-xl-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                
+                <span class="h2 font-weight-bold mb-0"><a href="{{Route('attendance')}}">Attendance</a>   </span>
+              </div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                  <i class="fas fa-calendar-o"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 mb-0 text-muted text-sm">
+              <span class="text-warning mr-2"><i class=""></i></span>
+              <span class="text-nowrap"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6">
+        <div class="card card-stats mb-4 mb-xl-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <h5 class="card-title text-uppercase text-muted mb-0"></h5>
+                <span class="h2 font-weight-bold mb-0"><a href="{{Route('client')}}">Clients</a></span>
+              </div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                  <i class="fas fa-handshake-o"></i>
+                </div>
+              </div>
+            </div>
+            <p class="mt-3 mb-0 text-muted text-sm">
+              <span class="text-success mr-2"><i class=""></i> </span>
+              <span class="text-nowrap"></span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-3" style="display: inline-block;">
-      <div class="faicon_style div_margin">
-        <!-- <span>
-        <i class="fa fa-book " aria-hidden="true"></i>
-        </span> -->
+
+    <!-- statistic -->
+    <div class="row stats">
+
+      <div class="col">
+        <!-- <div class="statContainer blue shadow-sm">
+          <div class="title text-center"></div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">TOTAL </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <div class="p-2 flex-fill text-center status">COMPLETED </br>
+              <h5 class="ont-weight-bold">20</h5>
+            </div>
+          </div>
+        </div> -->
       </div>
-      <div style="display: inline-block;" class="div_margin">
-        <p class="status_div"><a href="{{Route('employee_list')}}">New Employees</a></p>
-        
+    
+      <div class="col">
+        <div class="statContainer yellow shadow-sm">
+          <div class="title text-center">Today's Leave</div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">On Leave </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <div class="p-2 flex-fill text-center status">On Duty </br>
+              <h5 class="ont-weight-bold">20</h5>
+            </div>
+          </div>
+        </div>
       </div>
+    
+      <div class="col">
+        <div class="statContainer fountainBlue shadow-sm">
+          <div class="title text-center">Completed Projects</div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">Completed </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <div class="p-2 flex-fill text-center status">Pending </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+        <div class="statContainer lightBlue shadow-sm">
+          <div class="title text-center">New Employee</div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">New Joinee </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <!-- <div class="p-2 flex-fill text-center status">COMPLETED </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+        <div class="statContainer purple shadow-sm">
+          <div class="title text-center">CORRESPONDENCES</div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">TOTAL </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <div class="p-2 flex-fill text-center status">COMPLETED </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col">
+        <!-- <div class="statContainer pink shadow-sm">
+          <div class="title text-center">CORRESPONDENCES</div>
+          <div class="d-flex">
+            <div class="p-2 flex-fill text-center">TOTAL </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+            <div class="p-2 flex-fill text-center status">COMPLETED </br>
+              <h5 class="font-weight-bold">20</h5>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    
+      
+    
     </div>
-    <div class="col-3" style="display: inline-block;">
-      <div class="faicon_style div_margin">
-        <!-- <span>
-        <i class="fa fa-book " aria-hidden="true"></i>
-        </span> -->
-      </div>
-      <div style="display: inline-block;" class="div_margin">
-        <p class="status_div"><a href="{{Route('attendance')}}">Attendance</a></p>
-        
-      </div>
-    </div>
-    <div class="col-3" style="display: inline-block;">
-      <div class="faicon_style div_margin">
-        <!-- <span>
-        <i class="fa fa-book " aria-hidden="true"></i>
-        </span> -->
-      </div>
-      <div style="display: inline-block;" class="div_margin">
-        <p class="status_div"><a href="{{Route('attendance')}}">Clients</a></p>
-        
-      </div>
-    </div>
+    <!-- endstatistic -->
   </div>
 
 
@@ -58,54 +188,7 @@
   
   <!-- end second_div -->
 
-  <!-- statistic_div -->
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-4">
-      Statistics
-      <form>
-        <div class="form-group">
-          <label for="formControlRange">Today Leave</label>
-          <input type="range" class="form-control-range" id="formControlRange">
-        </div>
-      </form>
-      <form>
-        <div class="form-group">
-          <label for="formControlRange">completed projects</label>
-          <input type="range" class="form-control-range" id="formControlRange">
-        </div>
-      </form>
-      <form>
-        <div class="form-group">
-          <label for="formControlRange">New Joinee</label>
-          <input type="range" class="form-control-range" id="formControlRange">
-        </div>
-      </form>
-      <form>
-        
-      </form>
-    </div>
-    <!-- <div class="col-4">
-      Statistics
-      <div>
-        <p>Today Absent</p>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header"><img src="" alt="image"></div>
-        <div class="card-body">
-          <h5 class="card-title">Name</h5>
-        </div>
-      </div>
-      <div class="card bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header"><img src="" alt="image"></div>
-        <div class="card-body">
-          <h5 class="card-title">Name</h5>
-        </div>
-      </div>
-    </div> -->
-    <div class="col-2"></div>
-  </div>
-  <!-- endstatistic -->
+
   <div class="row">
     <div class="col-1"></div>
 
@@ -115,9 +198,9 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Client Name</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -125,18 +208,18 @@
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
-            <td>@mdo</td>
+            <td>active</td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+            <td>active</td>
           </tr>
           <tr>
             <th scope="row">3</th>
             <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>active</td>
           </tr>
           <tr>
             <td colspan="2">
@@ -172,28 +255,29 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Priority</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
             <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>Tuesday, 5 July 2022</td>
+            <td>High</td>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>Tuesday, 5 July 2022</td>
+            <td>High</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
+            <td>Jacob</td>
+            <td>Tuesday, 5 July 2022</td>
+            <td>High</td>
           </tr>
           <tr>
             <td colspan="2">
@@ -226,7 +310,5 @@
     <div class="col-1"></div>
   </div>
 </div>
-</body>
-
-</html>
+</div>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layout')
 @section("content")
 <div class="container">
-<table class="table table_list">
+<table class="table table_list col-sm-12">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Employee Name</th>
